@@ -299,7 +299,7 @@ a.text-dark:hover, a.text-dark:focus {
 /* Service Card Styles */
 .service-card {
     position: relative;
-    background-image: url(./Asset/Card.jpeg);
+    background-image: url(../assets/Card.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
