@@ -1,4 +1,3 @@
-<!-- and will add an swiper slider for our clients section  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,6 +110,150 @@
 
 
   <main>
+    
+        
+      <div class="page-section features">  
+    <section id="services">
+            <h2>Our Services</h2>    
+      
+      <div class="container">
+        <div class="row justify-content-center">
+        <div class="services-card-place">
+            <!-- Card 1 - Web Apps and Websites Development -->
+          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div class="service-card">
+                <i class="fas fa-code service-icon"></i>
+                <h3>Web Apps & Websites Development</h3>
+                <p>Custom web apps and websites tailored to your business needs, using the latest technologies.</p>
+            </div>
+          </div>
+    
+            <!-- Card 2 - SEO -->
+          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div class="service-card">
+                <i class="fas fa-search service-icon"></i>
+                <h3>SEO</h3>
+                <p>Boost your website’s visibility on search engines and attract more traffic with our SEO strategies.</p>
+            </div>
+          </div>
+    
+            <!-- Card 3 - Content Writing -->
+          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div class="service-card">
+                <i class="fas fa-pencil-alt service-icon"></i>
+                <h3>Content Writing</h3>
+                <p>Engaging content that tells your story and connects with your audience.</p>
+            </div>
+          </div>
+    
+            <!-- Card 4 - Next.js Development -->
+          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div class="service-card">
+                <i class="fab fa-react service-icon"></i>
+                <h3>Next.js Development</h3>
+                <p>Efficient and scalable web applications using Next.js framework for optimal performance.</p>
+            </div>
+          </div>
+    
+            <!-- Card 5 - Laravel Development -->
+          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div class="service-card">
+                <i class="fab fa-laravel service-icon"></i>
+                <h3>Laravel Development</h3>
+                <p>Secure and feature-rich web applications built with Laravel, the leading PHP framework.</p>
+            </div>
+          </div>
+    
+            <!-- Card 6 - WordPress Development -->
+          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div class="service-card">
+                <i class="fab fa-wordpress service-icon"></i>
+                <h3>WordPress Development</h3>
+                <p>Create flexible and easy-to-manage websites using WordPress, the most popular CMS.</p>
+            </div>
+          </div>
+    
+            <!-- Card 7 - Chatbots Development -->
+          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div class="service-card">
+                <i class="fas fa-robot service-icon"></i>
+                <h3>Chatbots Development</h3>
+                <p>Automate customer support and engage users with intelligent chatbots tailored to your needs.</p>
+            </div>
+          </div>
+    
+            <!-- Card 8 - .NET Development -->
+          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div class="service-card">
+                <i class="fab fa-microsoft service-icon"></i>
+                <h3>.NET Development</h3>
+                <p>Robust and scalable applications built on the .NET framework for a wide range of business solutions.</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="services-cont">
+            <p>We provide cutting-edge solutions for your digital transformation journey.</p>
+            <ul class="services-summary">
+                <li>Custom web applications and websites tailored to your business needs.</li>
+                <li>Advanced SEO strategies to boost your online visibility and traffic.</li>
+                <li>Professional content writing that engages your audience and drives results.</li>
+                <li>Efficient Next.js and Laravel development for scalable, high-performance applications.</li>
+                <li>WordPress development for flexible, easy-to-manage websites.</li>
+                <li>AI-powered chatbot solutions for automated customer interaction.</li>
+                <li>Robust .NET development for enterprise-grade applications.</li>
+            </ul>
+            <div class="services-btn">
+                <button id="services-btn">Read More</button>
+            </div>
+        </div>
+            <script>
+    // Function to handle hover effects
+    function handleHoverEffect() {
+        // Select all service cards
+        const serviceCards = document.querySelectorAll('.service-card');
+        
+        // Iterate over each card
+        serviceCards.forEach(card => {
+            // Mouse enter event
+            card.addEventListener('mouseenter', () => {
+                anime({
+                    targets: card,
+                    translateY: [-10, 0], // Move up
+                    boxShadow: [
+                        { value: '0px 4px 10px rgba(0, 0, 0, 0.1)' },
+                        { value: '0px 8px 16px rgba(0, 0, 0, 0.2)' }
+                    ],
+                    duration: 300,
+                    easing: 'easeOutQuad'
+                });
+            });
+
+            // Mouse leave event
+            card.addEventListener('mouseleave', () => {
+                anime({
+                    targets: card,
+                    translateY: [0, 0], // Reset to original position
+                    boxShadow: [
+                        { value: '0px 8px 16px rgba(0, 0, 0, 0.2)' },
+                        { value: '0px 4px 10px rgba(0, 0, 0, 0.1)' }
+                    ],
+                    duration: 300,
+                    easing: 'easeOutQuad'
+                });
+            });
+        });
+    }
+
+    // Initialize the hover effect
+    document.addEventListener('DOMContentLoaded', handleHoverEffect);
+</script>
+        </div>
+      </div>
+      </div>
+    </section>
+
+      
     <div class="page-section features">
       <div class="container">
         <div class="row justify-content-center">
